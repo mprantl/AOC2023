@@ -128,28 +128,6 @@ fn main() {
                     sum += game_counter;
                 }
                 game_counter += 1;
-                /*
-                println!(
-                    "------------------------- GAME {} --------------------------",
-                    game_counter
-                );
-                println!(
-                    "Summary: red: {} \t green: {} \t blue: {} \t",
-                    game.red, game.green, game.blue
-                );
-                if game.red <= red_counter
-                    && game.green <= green_counter
-                    && game.blue <= blue_counter
-                {
-                    print!("VALID! \t\t");
-                    sum += game_counter;
-                    println!("Current sum: {}", sum);
-                    println!("-----------------------------------------------------------");
-                } else {
-                    print!("INVALID! \t");
-                    println!("Current sum: {}", sum);
-                    println!("-----------------------------------------------------------");
-                }*/
             }
         }
         Err(e) => println!("Error opening file: {}", e),
