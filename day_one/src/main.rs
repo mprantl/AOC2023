@@ -26,6 +26,15 @@ fn find_numbers(line: String) -> i32{
     let real_result =  s.parse::<i32>().unwrap();
     real_result
 }
+/*
+fn find_numbers_v2(line: String){
+    line.find(pat)
+    match line{
+
+        _ => ()
+    }
+}
+ */
 
 fn main() {
     let filename = "input.txt";

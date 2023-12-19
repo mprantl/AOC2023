@@ -1,8 +1,10 @@
 use std::error::Error;
 use std::fs::read_to_string;
+use std::ops::Index;
 
-struct Number{
-    start_index: 
+struct Location{
+    i: i32,
+    j: i32,
 }
 
 fn read_file_to_2d_array(filename: &str) -> Result<Vec<Vec<String>>, Box<dyn Error>> {
@@ -15,6 +17,27 @@ fn read_file_to_2d_array(filename: &str) -> Result<Vec<Vec<String>>, Box<dyn Err
     }
 
     Ok(array_2d)
+}
+
+fn find_symbols(array: Vec<Vec<String>>) -> Vec<Location> {
+    let sym_list: Vec<Location> = vec![];
+    for row in &array {
+        for elem in row {
+            
+        }
+    }
+    sym_list
+}
+
+fn find_negativ(array: Vec<Vec<String>>) -> Vec<Location> {
+    let neg_list: Vec<Location> = vec![];
+    for row in & array {
+        for elem in row {
+            if elem.contains('.') {
+                neg_list.i = row
+            }
+        }
+    }
 }
 
 fn parse_array(array: Vec<Vec<String>>) {
